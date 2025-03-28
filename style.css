@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+header{
+    font-family: "DM Serif Display", serif;
+    font-size: 20pt;
+    background-color: #c1ff72;
+    height: 120px;
+}
+header .nav-bar{
+    height: 100%;
+    width: 100%;
+}
+header .nav-list{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+header .nav-list li{
+    width: 18%;
+}
+header .nav-list li a{
+    text-decoration: none;
+    color: #000;
+    transition: 200ms
+}
+header .nav-list li a:hover{
+    color: #fff;
+    background-color: #0002;
+    border-radius: 5px;
+}
+header .nav-list li .current-page{
+    color: #299a92;
+    text-decoration: underline;
+}
+.logo{
+    height: 180px;
+    transform: translateY(40%);
+}
