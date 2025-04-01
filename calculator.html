@@ -20,7 +20,60 @@
         </nav>
     </header>
     <main>
-
+        <form class="calculator-form" action="">
+            <h1>Calcule o gasto de energia</h1>
+            <label for="equipamento"></label>
+            <select name="equipamento" id="equipamento">
+                <option value="200">Aparelho de som</option>
+                <option value="100">Ventilador</option>
+                <option value="1500">Aquecedor de ambiente</option>
+                <option value="2700">Máquina de lavar louça</option>
+                <option value="1000">Aspirador de pó</option>
+                <option value="5000">Forno elétrico</option>
+                <option value="5000">Aquecedor central de água</option>
+                <option value="400">Impressora laser</option>
+                <option value="900">Balcão frigorífico</option>
+                <option value="200">Televisão</option>
+                <option value="450">Batedeira</option>
+                <option value="1300">Forno de micro-ondas</option>
+                <option value="900">Boiler</option>
+                <option value="350">Refrigerador Duplex</option>
+                <option value="300">Cafeteira</option>
+                <option value="150">Freezer</option>
+                <option value="350">Computador</option>
+                <option value="3500">Secadora de roupa</option>
+                <option value="1600">Condicionador de ar</option>
+                <option value="2200">Motor 3 cv/hp</option>
+                <option value="5000">Chuveiro elétrico</option>
+                <option value="1200">Fritadeira</option>
+                <option value="350">Enceradeira</option>
+                <option value="400">Liquidificador</option>
+                <option value="300">Exaustor</option>
+                <option value="750">Ferro elétrico tradicional</option>
+                <option value="3500">Torneira elétrica</option>
+                <option value="1500">Ferro elétrico regulável</option>
+                <option value="1200">Grill</option>
+                <option value="1300">Secador de cabelo</option>
+                <option value="50">Impressora jato de tinta</option>
+                <option value="1500">Máquina de lavar roupa</option>
+                <option value="5550">Motor 7,5 cv/hp</option>
+            </select>
+            <label for="tempo">Tempo de uso (em horas):</label>
+            <input type="number" id="tempo" name="tempo" required>
+            <label for="horas-por">Horas por:</label>
+            <select name="" id="horas-por">
+                <option value="dia">Dia</option>
+                <option value="semana">Semana</option>
+                <option value="mes">Mês</option>
+            </select>
+            <button>Calcular</button>
+        </form>
+        <hr>
+        <div class="result-div">
+            <h2>Resultado:</h2>
+            <p id="resultado"></p>
+        </div>
     </main>
+    <script src="calculator.js"></script>
 </body>
 </html>
