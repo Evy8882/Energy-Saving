@@ -17,7 +17,7 @@ function energyCalc(e){
     }else{
         custoAnual = kwh * 12;
     }
-    document.querySelector("#resultado").innerHTML += `<br>O custo por ano é de R$ ${custoAnual}`;
+    document.querySelector("#resultado").innerHTML += `<br>O custo por ano é de ${custoAnual}kw`;
 
 }
 document.querySelector(".calculator-form").addEventListener("submit", energyCalc);
