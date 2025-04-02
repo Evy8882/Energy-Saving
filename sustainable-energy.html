@@ -8,68 +8,6 @@
     <title>Energy Saving</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-
-        header {
-            font-family: "DM Serif Display", serif;
-            font-size: 20pt;
-            background-color: #c1ff72;
-            height: 120px;
-        }
-
-        header .nav-bar {
-            height: 100%;
-            width: 100%;
-        }
-
-        header .nav-list {
-            text-align: center;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-            list-style: none;
-        }
-
-        header .nav-list li {
-            width: 18%;
-        }
-
-        header .nav-list li a {
-            text-decoration: none;
-            color: #000;
-            transition: 200ms;
-        }
-
-        header .nav-list li a:hover {
-            color: #fff;
-            background-color: #0002;
-            border-radius: 5px;
-        }
-
-        header .nav-list li .current-page {
-            color: #299a92;
-            text-decoration: underline;
-        }
-
-        .logo {
-            height: 180px;
-            transform: translateY(40%);
-        }
-
         h1 {
             text-align: center;
             margin-top: 100px;
@@ -101,12 +39,12 @@
             border-radius: 5px;
         }
 
-        ul {
+        #ulEnergy {
             list-style-type: disc;
             margin-left: 20px;
         }
 
-        ul ul {
+        #ulEnergy ul {
             list-style-type: circle;
         }
 
@@ -152,7 +90,7 @@
     <main>
 
 
-        <h1>Leis de Consumo de Energia Elétrica do Brasil</h1>
+        <h1 id="h1Energy">Leis de Consumo de Energia Elétrica do Brasil</h1>
 
         <div class="card-container">
             <div class="card">
@@ -176,7 +114,7 @@
             <div class="card">
                 <h2>Exemplo:</h2>
                 <br>
-                <ul>
+                <ul id="ulEnergy">
                     <li>Consumo: 500 kWh em um mês</li>
                     <li>Tarifa Aplicada: R$ 0,60 por kWh​</li>
                     <li>Cálculo: 500 kWh x R$ 0,60/kWh = R$ 300,00.​</li>
@@ -188,7 +126,7 @@
             <div class="card">
                 <h2>Fatores Adicionais:</h2>
                 <br>
-                <ul>
+                <ul id="ulEnergy">
                     <li> <strong>Bandeiras Tarifárias:</strong> Sistema que indica as condições de geração de energia no
                         país, afetando o
                         custo do kWh. As bandeiras podem ser verde (sem custo adicional), amarela ou vermelha (com
@@ -213,7 +151,7 @@
                 <br>
                 <p>As bandeiras utilizam um código de cores para sinalizar os níveis de custo da geração de energia:</p>
                 <br>
-                <ul>
+                <ul id="ulEnergy">
                     <li> <p id="p-verde">Bandeira Verde:</p> Indica que as condições de geração estão favoráveis, e não há custo adicional na
                         tarifa;</li>
                     <br>
@@ -223,7 +161,7 @@
                     <li><p id="p-vermelha">Bandeira Vermelha:</p> Representa condições de geração mais onerosas, com dois patamares de cobrança
                         adicional:
                         <br>
-                        <ul>
+                        <ul id="ulEnergy">
                             <li> <strong>Patamar 1:</strong> Adicional de R$ 3,971 a cada 100 kWh consumidos;</li>
                             <br>
                             <li> <strong>Patamar 2:</strong> Adicional de R$ 9,492 a cada 100 kWh consumidos.​</li>
@@ -246,7 +184,7 @@
                 <br>
                 <p>Para estimar o impacto das bandeiras no valor da conta, siga os passos abaixo:​</p>
                 <br>
-                <ul>
+                <ul id="ulEnergy">
                     <li><strong>Identifique o Consumo Mensal:</strong> Verifique quantos kWh foram consumidos no mês;​</li>
                     <br>
                     <li><strong>Determine a Bandeira Vigente:</strong> Consulte qual bandeira está em vigor no período;​</li>
