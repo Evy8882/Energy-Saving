@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imgs/logo.png">
     <title>Energy Saving</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            font-family: "DM Serif Display", serif;
+            font-size: 20pt;
+            background-color: #c1ff72;
+            height: 120px;
+        }
+
+        header .nav-bar {
+            height: 100%;
+            width: 100%;
+        }
+
+        header .nav-list {
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            list-style: none;
+        }
+
+        header .nav-list li {
+            width: 18%;
+        }
+
+        header .nav-list li a {
+            text-decoration: none;
+            color: #000;
+            transition: 200ms;
+        }
+
+        header .nav-list li a:hover {
+            color: #fff;
+            background-color: #0002;
+            border-radius: 5px;
+        }
+
+        header .nav-list li .current-page {
+            color: #299a92;
+            text-decoration: underline;
+        }
+
+        .logo {
+            height: 180px;
+            transform: translateY(40%);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 20px;
+            padding: 0px 0px 0px 20px;
+        }
+
+        .card {
+            background-color: #b7dc98;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 20px);
+            min-width: 280px;
+            flex: 1;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        ul ul {
+            list-style-type: circle;
+        }
+
+        .t-bandeiras {
+            text-align: center;
+            padding: 10px 20px 10px 20px;
+        }
+
+        #bandeiras {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 300px;
+        }
+        #p-verde {
+            color: green;
+            font-weight: bold;
+        }
+        #p-amarela {
+            color: yellow;
+            font-weight: bold;
+        }
+        #p-vermelha {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav class="nav-bar">
@@ -21,6 +151,114 @@
     </header>
     <main>
 
+
+        <h1>Leis de Consumo de Energia Elétrica do Brasil</h1>
+
+        <div class="card-container">
+            <div class="card">
+                <h2>Cálculo da Conta de Energia:</h2>
+                <br>
+                <ul>
+                    <li> <strong>Leitura do Consumo:</strong></li>
+                    <p>A distribuidora realiza a leitura do medidor de energia no início e no final do período de
+                        faturamento, geralmente mensal. A diferença entre essas leituras determina o consumo total em
+                        kilowatt-hora (kWh).</p>
+                    <br>
+                    <li> <strong>Aplicação da Tarifa:</strong></li>
+                    <p>O consumo registrado é multiplicado pela tarifa vigente do kWh, que varia conforme a categoria de
+                        consumo (residencial, comercial, industrial) e a região do país.​</p>
+                    <br>
+                    <li> <strong>Encargos e Tributos:</strong></li>
+                    <p>Além do custo da energia consumida, a conta inclui encargos setoriais e tributos, como ICMS,
+                        PIS/COFINS e Contribuição para Iluminação Pública (CIP).​</p>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Exemplo:</h2>
+                <br>
+                <ul>
+                    <li>Consumo: 500 kWh em um mês</li>
+                    <li>Tarifa Aplicada: R$ 0,60 por kWh​</li>
+                    <li>Cálculo: 500 kWh x R$ 0,60/kWh = R$ 300,00.​</li>
+                    <li>Encargos e Tributos: Supondo R$ 50,00.​</li>
+                    <li>Total da Conta: R$ 300,00 + R$ 50,00 = R$ 350,00.</li>
+                    <img src="./imgs/Grafico.png" alt="">
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Fatores Adicionais:</h2>
+                <br>
+                <ul>
+                    <li> <strong>Bandeiras Tarifárias:</strong> Sistema que indica as condições de geração de energia no
+                        país, afetando o
+                        custo do kWh. As bandeiras podem ser verde (sem custo adicional), amarela ou vermelha (com
+                        custos adicionais). ​</li>
+                    <br>
+                    <li> <strong>Impostos Estaduais e Municipais:</strong> O ICMS, por exemplo, é um imposto estadual
+                        que incide sobre o
+                        consumo de energia, variando conforme a legislação de cada estado.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h1 id="Conta">Cálculo da Conta de Energia:</h1>
+        <br>
+        <p class="t-bandeiras">​ As bandeiras tarifárias são um sistema adotado no Brasil para indicar as condições de
+            custo da geração de
+            energia elétrica, refletindo os custos reais de produção e incentivando o consumo consciente. </p>
+
+        <div class="card-container">
+            <div class="card">
+                <h2>Como Funcionam as Bandeiras Tarifárias:</h2>
+                <br>
+                <p>As bandeiras utilizam um código de cores para sinalizar os níveis de custo da geração de energia:</p>
+                <br>
+                <ul>
+                    <li> <p id="p-verde">Bandeira Verde:</p> Indica que as condições de geração estão favoráveis, e não há custo adicional na
+                        tarifa;</li>
+                    <br>
+                    <li><p id="p-amarela">Bandeira Amarela:</p> Sinaliza que os custos de geração aumentaram, aplicando um adicional de R$
+                        1,00 a cada 100 kWh consumidos;</li>
+                    <br>
+                    <li><p id="p-vermelha">Bandeira Vermelha:</p> Representa condições de geração mais onerosas, com dois patamares de cobrança
+                        adicional:
+                        <br>
+                        <ul>
+                            <li> <strong>Patamar 1:</strong> Adicional de R$ 3,971 a cada 100 kWh consumidos;</li>
+                            <br>
+                            <li> <strong>Patamar 2:</strong> Adicional de R$ 9,492 a cada 100 kWh consumidos.​</li>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+                <h2>Calculando o Impacto das Bandeiras na Conta de Energia:</h2>
+                <br>
+                <ul>
+                    <li> <strong>Consumo:</strong> 300 kWh no mês.​</li>
+                    <br>
+                    <li><strong>Bandeira Vermelha - Patamar 1:</strong> Adicional de R$ 3,971 por 100 kWh.​</li>
+                    <br>
+                    <li><strong>Cálculo do Adicional:</strong> (300 kWh / 100) x R$ 3,971 = R$ 11,91.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Calculando o Impacto das Bandeiras na Conta de Energia:</h2>
+                <br>
+                <p>Para estimar o impacto das bandeiras no valor da conta, siga os passos abaixo:​</p>
+                <br>
+                <ul>
+                    <li><strong>Identifique o Consumo Mensal:</strong> Verifique quantos kWh foram consumidos no mês;​</li>
+                    <br>
+                    <li><strong>Determine a Bandeira Vigente:</strong> Consulte qual bandeira está em vigor no período;​</li>
+                    <br>
+                    <li><strong>Calcule o Adicional:</strong> Multiplique o consumo (em kWh) pelo valor adicional da bandeira vigente.
+                    </li>
+                </ul>
+                <br>
+                <img src="./imgs/bandeiras.png" alt="" height="200px" width="400px" id="bandeiras">
+            </div>
+        </div>
     </main>
 </body>
+
 </html>
