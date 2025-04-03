@@ -13,7 +13,7 @@ header{
     font-family: "DM Serif Display", serif;
     font-size: 20pt;
     background-color: #c1ff72;
-    height: 120px;
+    height: 100px;
 }
 header .nav-bar{
     height: 100%;
@@ -103,6 +103,34 @@ header .nav-list li .current-page{
     background-color: #74a535;
     color: #fff;
 }
+
+#contadeluz {
+    width: auto;
+    height: 300px;
+    border-radius: 2%;
+}
+
+#seloprocelo {
+    width: 400px;
+    height: 400px;
+}
+
+#industria{
+    width: auto;
+    height: 300px;
+    border-radius: 2%;
+}
+
+#procel {
+    width: auto;
+    height: 400px;
+}
+
+#inmetro {
+    width: auto;
+    height: 250px;
+}
+
 @media (max-width: 860px) {
     .content-section{
         flex-direction: column;
