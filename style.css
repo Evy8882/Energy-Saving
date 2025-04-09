@@ -15,6 +15,9 @@ header{
     background-color: #c1ff72;
     height: 100px;
 }
+main{
+    min-width: calc(100vh - 100px);
+}
 header .nav-bar{
     height: 100%;
     width: 100%;
@@ -36,12 +39,15 @@ header .nav-list li a{
     color: #000;
     transition: 200ms
 }
-header .nav-list li a:hover{
+header .nav-list li a:hover:not(.img-link){
     color: #fff;
     background-color: #0002;
     border-radius: 5px;
 }
-header .nav-list li .current-page{
+.img-link:hover{
+    filter: brightness(0.8);
+}
+header .nav-list li .current-page:not(.img-link){
     color: #299a92;
     text-decoration: underline;
 }
