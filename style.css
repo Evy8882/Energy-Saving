@@ -16,7 +16,7 @@ header{
     height: 100px;
 }
 main{
-    min-width: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
 }
 header .nav-bar{
     height: 100%;
